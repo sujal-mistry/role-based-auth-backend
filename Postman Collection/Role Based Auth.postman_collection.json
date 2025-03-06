@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "59bb6fa3-7745-4b11-9a82-d4e5e09709eb",
+    "name": "Role Based Auth",
+    "description": "API for Delivery charges calculate, book delivery and cancel delivery.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "25907365",
+    "_collection_link": "https://practice-3996.postman.co/workspace/Role-Based-Auth~bc17dc54-91b9-4db2-a320-e0a18562d17d/collection/25907365-59bb6fa3-7745-4b11-9a82-d4e5e09709eb?action=share&source=collection_link&creator=25907365"
+  },
+  "item": [
+    {
+      "name": "Register User",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"first_name\": \"Sujal\",\n    \"last_name\": \"Mistry\",\n    \"email\": \"sujal.mistry104@gmail.com\",\n    \"password\": \"sujal@104\",\n    \"is_admin\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/customer/user",
+          "host": ["{{URL}}"],
+          "path": ["customer", "user"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Admin Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"sujal.mistry104@gmail.com\",\n    \"password\": \"sujal@104\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/admin/login",
+          "host": ["{{URL}}"],
+          "path": ["admin", "login"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Validate OTP",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"sujal.mistry104@gmail.com\",\n    \"otp\": \"1905\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/validate/otp",
+          "host": ["{{URL}}"],
+          "path": ["validate", "otp"]
+        }
+      },
+      "response": []
+    }
+  ]
+}

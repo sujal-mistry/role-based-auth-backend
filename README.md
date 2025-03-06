@@ -21,6 +21,14 @@ This is a **Node.js + Express.js** backend with **MySQL** for role-based authent
 
 ---
 
+📡 API Endpoints
+
+POST: /user/registration - Register a new User (Customer or Admin)
+POST: /validate/otp - Validate Email OTP
+POST: /admin/login - Admin Login
+
+---
+
 ## **📂 Project Structure**
 
 ```

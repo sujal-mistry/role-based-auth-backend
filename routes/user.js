@@ -7,7 +7,7 @@ const {
   admin_login,
 } = require("../service/user.service");
 
-router.route("/customer/user").post(customer_register);
+router.route("/user/registration").post(customer_register);
 router.route("/validate/otp").post(validate_otp);
 router.route("/admin/login").post(admin_login);
 
