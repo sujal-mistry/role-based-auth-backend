@@ -1,0 +1,9 @@
+{
+  "mysqldatabase": {
+    "user": "sql12766069",
+    "password": "ze6KPWujUs",
+    "host": "sql12.freesqldatabase.com",
+    "database": "sql12766069",
+    "port": 3306
+  }
+}
